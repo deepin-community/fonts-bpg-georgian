@@ -1,15 +1,19 @@
-Source: template-repository
-Section: unknown
+Source: fonts-bpg-georgian
+Section: fonts
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Uploaders: Hideki Yamane <henrich@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+Standards-Version: 4.5.0
+Homepage: https://bpgfonts.wordpress.com/
+Vcs-Git: https://salsa.debian.org/fonts-team/fonts-bpg-georgian.git
+Vcs-Browser: https://salsa.debian.org/fonts-team/fonts-bpg-georgian
+Rules-Requires-Root: no
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: fonts-bpg-georgian
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Description: BPG Georgian fonts
+ This package provides a collection of three Georgian fonts, provided by
+ BPG-InfoTech.
